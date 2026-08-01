@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const categories = [
-  { name: 'Banarasi', image: 'src/images/box1.webp', slug: 'crimson-zari-banarasi-silk' },
-  { name: 'Kanjivaram', image: 'src/images/box2.webp', slug: 'royal-purple-kanjivaram' },
-  { name: 'Chiffon', image: 'src/images/box3.webp', slug: 'emerald-green-chiffon' },
-  { name: 'Organza', image: 'src/images/box4.webp', slug: 'rose-gold-organza-draping' },
-  { name: 'Cotton', image: 'src/images/img21.webp', slug: 'ivory-chanderi-cotton' },
-  { name: 'Bridal', image: 'src/images/img22.webp', slug: 'bridal-red-jamdani' },
-  { name: 'Linen', image: 'src/images/img20.webp', slug: 'peach-linen-blend' },
-  { name: 'Designer', image: 'src/images/img19.webp', slug: 'gold-tissue-designer' },
+
+ const categories = [
+  { name: 'Banarasi', image: '/images/products/box1.webp', slug: 'crimson-zari-banarasi-silk' },
+  { name: 'Kanjivaram', image: '/images/products/box2.webp', slug: 'royal-purple-kanjivaram' },
+  { name: 'Chiffon', image: '/images/products/box3.webp', slug: 'emerald-green-chiffon' },
+  { name: 'Organza', image: '/images/products/box4.webp', slug: 'rose-gold-organza-draping' },
+  { name: 'Cotton', image: '/images/products/img21.webp', slug: 'ivory-chanderi-cotton' },
+  { name: 'Bridal', image: '/images/products/img22.webp', slug: 'bridal-red-jamdani' },
+  { name: 'Linen', image: '/images/products/img20.webp', slug: 'peach-linen-blend' },
+  { name: 'Designer', image: '/images/products/img19.webp', slug: 'gold-tissue-designer' },
 ];
 
 export default function ShopByWeave() {

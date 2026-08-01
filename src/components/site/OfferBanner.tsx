@@ -4,12 +4,13 @@ export default function OfferBanner() {
       <div className="container-luxe">
         <div className="relative rounded-3xl overflow-hidden">
           {/* Background Image */}
-          <img
-            src="src/images/offerbanner.webp"
-            alt="Festive bridal collection"
-            className="w-full h-auto object-none"
-            loading="lazy"
-          />
+         <img
+  src="/images/products/offerbanner.webp"
+  alt="Festive bridal collection"
+  className="w-full h-auto object-none"
+  loading="lazy"
+/>
+          
         </div>
       </div>
     </section>
