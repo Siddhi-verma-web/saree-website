@@ -38,7 +38,7 @@ export default function ShopByWeave() {
   const categoryItem = (category: typeof categories[0], index: number) => (
     <Link
       key={category.name}
-      to={`/product/${category.fabricSlug}`}
+     to={`/category/${category.fabricSlug}`}
       className={`group text-center flex-shrink-0 opacity-0 ${
         isVisible ? 'animate-fade-up' : ''
       }`}
