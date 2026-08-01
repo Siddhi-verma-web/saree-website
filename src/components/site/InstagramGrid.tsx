@@ -1,38 +1,38 @@
 import { Instagram } from 'lucide-react';
-
 const instagramPosts = [
   {
     id: 1,
-    image: 'src/images/img19.webp',
+    image: '/images/products/img19.webp',
     alt: 'Customer styling Banarasi silk saree',
   },
   {
     id: 2,
-    image: 'src/images/insta1.webp',
+    image: '/images/products/insta1.webp',
     alt: 'Kanjivaram bridal look',
   },
   {
     id: 3,
-    image: 'src/images/insta2.webp',
+    image: '/images/products/insta2.webp',
     alt: 'Festive saree styling',
   },
   {
     id: 4,
-    image: 'src/images/insta3.webp',
+    image: '/images/products/insta3.webp',
     alt: 'Organza elegance',
   },
   {
     id: 5,
-    image: 'src/images/insta4.webp',
+    image: '/images/products/insta4.webp',
     alt: 'Cotton saree daily wear',
   },
   {
     id: 6,
-    image: 'src/images/insta5.webp',
+    image: '/images/products/insta5.webp',
     alt: 'Evening chiffon drape',
   },
 ];
 
+   
 export default function InstagramGrid() {
   return (
     <section className="py-16 md:py-24 bg-blush">
