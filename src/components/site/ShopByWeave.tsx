@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 
  const categories = [
-  { name: 'Banarasi', image: '/images/products/box1.webp', slug: 'crimson-zari-banarasi-silk' },
-  { name: 'Kanjivaram', image: '/images/products/box2.webp', slug: 'royal-purple-kanjivaram' },
-  { name: 'Chiffon', image: '/images/products/box3.webp', slug: 'emerald-green-chiffon' },
-  { name: 'Organza', image: '/images/products/box4.webp', slug: 'rose-gold-organza-draping' },
-  { name: 'Cotton', image: '/images/products/img21.webp', slug: 'ivory-chanderi-cotton' },
-  { name: 'Bridal', image: '/images/products/img22.webp', slug: 'bridal-red-jamdani' },
-  { name: 'Linen', image: '/images/products/img20.webp', slug: 'peach-linen-blend' },
-  { name: 'Designer', image: '/images/products/img19.webp', slug: 'gold-tissue-designer' },
+  { name: 'Banarasi', image: '/images/products/box1.webp', fabricSlug: 'banarasi' },
+  { name: 'Kanjivaram', image: '/images/products/box2.webp', fabricSlug: 'kanjivaram' },
+  { name: 'Chiffon', image: '/images/products/box3.webp', fabricSlug: 'chiffon' },
+  { name: 'Organza', image: '/images/products/box4.webp', fabricSlug: 'organza' },
+  { name: 'Cotton', image: '/images/products/img21.webp', fabricSlug: 'cotton' },
+  { name: 'Bridal', image: '/images/products/img22.webp', fabricSlug: 'bridal' },
+  { name: 'Linen', image: '/images/products/img20.webp', fabricSlug: 'linen' },
+  { name: 'Designer', image: '/images/products/img19.webp', fabricSlug: 'designer' },
 ];
 
 export default function ShopByWeave() {
@@ -38,7 +38,7 @@ export default function ShopByWeave() {
   const categoryItem = (category: typeof categories[0], index: number) => (
     <Link
       key={category.name}
-      to={`/product/${category.slug}`}
+      to={`/product/${category.fabricSlug}`}
       className={`group text-center flex-shrink-0 opacity-0 ${
         isVisible ? 'animate-fade-up' : ''
       }`}
